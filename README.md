@@ -68,8 +68,8 @@ Here's an example of the data I'll be using:
 | Apply search event listeners   |    H     |      4hrs      |               |             |
 | C3.JS interact with listeners  |    H     |      5hrs      |               |             |
 | Add responsiveness             |    H     |      8hrs      |               |             |
-| Add filtering with time  input |    H     |      2hrs      |               |             |
-| Add  lang vs lang section      |    H     |      2hrs      |               |             |
+| Add filtering with time  input |    M     |      2hrs      |               |             |
+| Add  lang vs lang section      |    M     |      2hrs      |               |             |
 
 | Total                          |    H     |     30hrs     |               |             |
 
