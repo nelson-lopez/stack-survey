@@ -11,3 +11,4 @@
 * C: Finish scaffolding HTML/CSS and base Javascript components
 * D: Add responsiveness for mobile
 * F: Display data using interactive C3.js graphs
+![json](json-example.png)
