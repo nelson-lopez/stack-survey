@@ -15,7 +15,13 @@
 |Sep 16th| Present | Incomplete
 
 ## Wireframes
+### Mobile Wireframes:
 ![mobile1](mobile-wireframe.jpg)
+![mobile2](mobile-wireframe2.jpg)
+
+### Desktop Wireframes
+![desktop1](desktop-wireframe.jpg)
+![desktop2](desktop-wireframe2.jpg)
 
 ### Priorities
 ![matrix](priority_matrix.png)
