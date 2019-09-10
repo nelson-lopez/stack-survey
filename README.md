@@ -57,10 +57,10 @@ Here's an example of the data I'll be using:
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Thorough Wireframing | H | 3hrs|  | |
-| Working with API | H | 3hrs|  |  |
+| Working with API | H | 1hrs|  |  |
 |Basic Scaffolding | H | 1.5hrs|  |  |
 | Hooking data up to the browser| H | 2hrs|  |  |
-| Total | H | 9.5hrs|  |  |
+| Total | H | 7.5hrs|  |  |
 
 ## Code Snippet
 
