@@ -1,7 +1,5 @@
 # Stack Survey
 
-## A simple app for Stack Overflow trends 
+## A simple app for Stack Overflow trends
 
-![alt text](https://raw.githubusercontent.com/nelson-lopez/stack-survery/master/Priority_Matrix.png)
-
-
+![alt text](/home/nelson/Projects/stack-analysis/stack-analysis/priority_matrix.png)
