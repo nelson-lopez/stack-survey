@@ -56,9 +56,11 @@ Here's an example of the data I'll be using:
 ## Time Frames
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Thorough Wireframing | H | 3hrs|  | |
+| Working with API | H | 3hrs|  |  |
+|Basic Scaffolding | H | 1.5hrs|  |  |
+| Hooking data up to the browser| H | 2hrs|  |  |
+| Total | H | 9.5hrs|  |  |
 
 ## Code Snippet
 
