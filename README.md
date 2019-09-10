@@ -62,7 +62,7 @@ Here's an example of the data I'll be using:
 
 | Component                      | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------------ | :------: | :------------: | :-----------: | :---------: |
-| Wireframing                    |    H     |      4hrs      |               |             |
+| Wireframing                    |    H     |      4hrs      |     4hrs      |     4hrs    |
 | Scaffolding for HTML/CSS/C3.JS |    H     |      3hrs      |               |             |
 | Render Language queries to page|    H     |      2hrs     |               |             |
 | Apply search event listeners   |    H     |      4hrs      |               |             |
