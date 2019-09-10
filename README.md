@@ -26,6 +26,7 @@
 ### Priorities
 ![matrix](priority_matrix.png)
 
+
 * A: Grab API Key
 * B: Successfully grab JSON and store into reusable data structures
 * C: Finish scaffolding HTML/CSS and base Javascript components
@@ -39,8 +40,28 @@ Here's an example of the data I'll be using:
 ![json](json-example.jpg)
 
 
-In order to implement these features I'll need :
+### MVP
+- Find and use external api 
+- Render data on page 
+- Allow users to enter different search queries to interact with the data on the page
+- Mobile responsiveness
 
-1. To query multiple different languages through the API
-2. Add hook in query filters to the browser to allow the user to modify their searches
-3. Connect search data from 
+### Post-MVP
+- Display data through C3.js Charts
+- Allow users to filter their data using different dates
+- Display language comparisons
+- Add animations for chart rendering 
+
+
+## Time Frames
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
+| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
+| Total | H | 6hrs| 5hrs | 5hrs |
+
+## Code Snippet
+
+
+## Change Log
+  
