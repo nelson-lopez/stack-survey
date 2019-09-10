@@ -15,7 +15,7 @@
 |Sep 16th| Present | Incomplete
 
 ## Wireframes
-
+![mobile1](mobile-wireframe.jpg)
 
 ### Priorities
 ![matrix](priority_matrix.png)
