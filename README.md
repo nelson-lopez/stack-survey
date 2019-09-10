@@ -6,7 +6,7 @@
 
 | Day      | Deliverable                                      | Status     |
 | -------- | ------------------------------------------------ | ---------- |
-| Sep 10th | Project Description/ Priority Matrix/ Wireframes | Incomplete |
+| Sep 10th | Project Description/ Priority Matrix/ Wireframes | Complete   |
 | Sep 11th | Functional Components/ Base CSS/HTML             | Incomplete |
 | Sep 12th | Core JavaScript functionality                    | Incomplete |
 | Sep 13th | C3.js Graphing implementation                    | Incomplete |
