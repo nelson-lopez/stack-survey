@@ -1,0 +1,16 @@
+{
+  "name": "css-toolset",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.23.0-module.beta.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "compile:sass": "sass --watch src/styles/sass/main.scss src/styles/css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

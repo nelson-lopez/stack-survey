@@ -18,17 +18,17 @@
 
 ### Mobile Wireframes:
 
-![mobile1](imgs/wire-frames/mobile-wireframe.jpg)
-![mobile2](imgs/wire-frames/mobile-wireframe2.jpg)
+![mobile1](src/imgs/wire-frames/mobile-wireframe.jpg)
+![mobile2](src/imgs/wire-frames/mobile-wireframe2.jpg)
 
 ### Desktop Wireframes
 
-![desktop1](imgs/wire-frames/desktop-wireframe.jpg)
-![desktop2](imgs/wire-frames/desktop-wireframe2.jpg)
+![desktop1](src/imgs/wire-frames/desktop-wireframe.jpg)
+![desktop2](src/imgs/wire-frames/desktop-wireframe2.jpg)
 
 ### Priorities
 
-![matrix](imgs/wire-frames/priority_matrix.png)
+![matrix](src/imgs/wire-frames/priority_matrix.png)
 
 - A: Grab API Key
 - B: Successfully grab JSON and store into reusable data structures
@@ -42,7 +42,7 @@ Here's an example of the data I'll be using:
 
 ## API Data
 
-![json](imgs/wire-frames/json-example.jpg)
+![json](src/imgs/wire-frames/json-example.jpg)
 
 ### MVP
 
