@@ -1,3 +1,53 @@
 @import './base-styles/typography.scss';
 @import './base-styles/global-styles.scss';
-@import './base-styles/container.scss';
+
+$color-yellow: rgba(242, 177, 0, 1);
+$color-blue: rgba(71, 121, 152, 0.8);
+$color-orange: rgba(255, 109, 5, 0.9);
+$color-red: rgba(246, 71, 64, 1);
+$color-green: rgba(91, 140, 90, 1);
+
+header {
+  height: 100vh;
+  background-color: white;
+  text-align: center;
+  width: 100 vw;
+}
+nav {
+  padding-bottom: 2em;
+}
+.container {
+  background-color: $color-blue;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .nav-menu--container {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-menu--div {
+    width: 3.5em;
+    height: 0.3em;
+    background-color: $color-orange;
+    margin: 5px 0;
+    list-style-type: none;
+  }
+  h4 {
+    flex: 1;
+    color: white;
+  }
+}
+.article-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body {
+  height: 100vh;
+}
+
+footer {
+  background-color: $color-yellow;
+}
