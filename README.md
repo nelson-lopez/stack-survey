@@ -7,7 +7,7 @@
 | Day      | Deliverable                                      | Status     |
 | -------- | ------------------------------------------------ | ---------- |
 | Sep 10th | Project Description/ Priority Matrix/ Wireframes | Complete   |
-| Sep 11th | Functional Components/ Base CSS/HTML             | Incomplete |
+| Sep 11th | Functional Components/ Base CSS/HTML             | Complete   |
 | Sep 12th | Core JavaScript functionality                    | Incomplete |
 | Sep 13th | C3.js Graphing implementation                    | Incomplete |
 | Sep 14th | Responsiveness via CSS                           | Incomplete |
@@ -63,8 +63,8 @@ Here's an example of the data I'll be using:
 | Component                      | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------------ | :------: | :------------: | :-----------: | :---------: |
 | Wireframing                    |    H     |      4hrs      |     4hrs      |     4hrs    |
-| Scaffolding for HTML/CSS/C3.JS |    H     |      3hrs      |               |             |
-| Render Language queries to page|    H     |      2hrs     |               |             |
+| Scaffolding for HTML/CSS/C3.JS |    H     |      3hrs      |     3hrs      |     3hrs    |
+| Render Language queries to page|    H     |      2hrs      |               |             |
 | Apply search event listeners   |    H     |      4hrs      |               |             |
 | C3.JS interact with listeners  |    H     |      5hrs      |               |             |
 | Add responsiveness             |    H     |      8hrs      |               |             |
