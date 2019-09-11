@@ -1,3 +1,37 @@
+// Global definitions
+let button = document.querySelector('button');
+
+const getData = async () => {
+  let url =
+    'https://api.stackexchange.com/2.2/tags?order=desc&sort=popular&inname=react&site=stackoverflow';
+  let res = await axios.get(url);
+  let data = res.data.items;
+  let keyPairs = objLoop(data);
+  let count = document.querySelector('.count');
+  let totalNames = Object.keys(keyPairs).slice(0,5)
+  let totalCount = Object.values(keyPairs).slice(0,5)
+  console.log(totalNames)
+  count.innerHTML = `${totalCount}`
+
+}
+
+button.addEventListener('click',getData);
+
+
+// Helper functions
+
+const objLoop = data => {
+  let returnedObj = {};
+  for (let obj in data) {
+    let count = data[obj].count;
+    let name = data[obj].name;
+    returnedObj[name] = count;
+  }
+  return returnedObj;
+};
+
+// Creating API Calls
+
 // Chart generating
 let chart = c3.generate({
   data: {
@@ -51,29 +85,3 @@ setTimeout(function() {
     columns: [['data3', 400, 500, 450, 700, 600, 500]]
   });
 }, 1000);
-// Helper functions
-const objLoop = (data) => {
-  let returnedObj = {}
-  for (let obj in data) {
-
-    let count = data[obj].count
-    let name = data[obj].name
-    returnedObj[name] = count
-  }
-  return returnedObj
-}
-let url =
-  'https://api.stackexchange.com/2.2/tags?order=desc&sort=popular&inname=react&site=stackoverflow';
-
-
-// Creating API Calls
-const instance = async (link) => {
-  let res = await axios.get(link);
-  let data = res.data.items
-  let count = objLoop(data)
-  console.log(count)
-};
-
-instance(url)
-
-
