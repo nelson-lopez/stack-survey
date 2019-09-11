@@ -6,7 +6,7 @@
 
 | Day      | Deliverable                                      | Status     |
 | -------- | ------------------------------------------------ | ---------- |
-| Sep 10th | Project Description/ Priority Matrix/ Wireframes | Incomplete |
+| Sep 10th | Project Description/ Priority Matrix/ Wireframes | Complete   |
 | Sep 11th | Functional Components/ Base CSS/HTML             | Incomplete |
 | Sep 12th | Core JavaScript functionality                    | Incomplete |
 | Sep 13th | C3.js Graphing implementation                    | Incomplete |
@@ -46,8 +46,8 @@ Here's an example of the data I'll be using:
 
 ### MVP
 
-- Find and use external api
-- Render data on page
+- Grab external data from StackExchange API
+- Render Language queries from StackExchange API
 - Allow users to enter different search queries to interact with the data on the page
 - Mobile responsiveness
 
@@ -62,11 +62,16 @@ Here's an example of the data I'll be using:
 
 | Component                      | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------------ | :------: | :------------: | :-----------: | :---------: |
-| Thorough Wireframing           |    H     |      3hrs      |               |             |
-| Working with API               |    H     |      1hrs      |               |             |
-| Basic Scaffolding              |    H     |     1.5hrs     |               |             |
-| Hooking data up to the browser |    H     |      2hrs      |               |             |
-| Total                          |    H     |     7.5hrs     |               |             |
+| Wireframing                    |    H     |      4hrs      |     4hrs      |     4hrs    |
+| Scaffolding for HTML/CSS/C3.JS |    H     |      3hrs      |               |             |
+| Render Language queries to page|    H     |      2hrs     |               |             |
+| Apply search event listeners   |    H     |      4hrs      |               |             |
+| C3.JS interact with listeners  |    H     |      5hrs      |               |             |
+| Add responsiveness             |    H     |      8hrs      |               |             |
+| Add filtering with time  input |    M     |      2hrs      |               |             |
+| Add  lang vs lang section      |    M     |      2hrs      |               |             |
+
+| Total                          |    H     |     30hrs     |               |             |
 
 ## Code Snippet
 
