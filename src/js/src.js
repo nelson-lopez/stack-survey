@@ -1,14 +1,15 @@
+// Chart generating
 let chart = c3.generate({
   data: {
     columns: [['data1', 30], ['data2', 120]],
     type: 'pie',
-    onclick: function (d, i) {
+    onclick: function(d, i) {
       console.log('onclick', d, i);
     },
-    onmouseover: function (d, i) {
+    onmouseover: function(d, i) {
       console.log('onmouseover', d, i);
     },
-    onmouseout: function (d, i) {
+    onmouseout: function(d, i) {
       console.log('onmouseout', d, i);
     }
   }
@@ -40,17 +41,39 @@ let chart3 = c3.generate({
     types: {
       data1: 'area-spline',
       data2: 'area-spline'
-      // 'line', 'spline', 'step', 'area', 'area-step' are also available to stack
     },
     groups: [['data1', 'data2']]
   }
 });
 
-setTimeout(function () {
+setTimeout(function() {
   chart.load({
-    columns: [
-      ['data3', 400, 500, 450, 700, 600, 500]
-    ]
+    columns: [['data3', 400, 500, 450, 700, 600, 500]]
   });
 }, 1000);
+// Helper functions
+const objLoop = (data) => {
+  let returnedObj = {}
+  for (let obj in data) {
+
+    let count = data[obj].count
+    let name = data[obj].name
+    returnedObj[name] = count
+  }
+  return returnedObj
+}
+let url =
+  'https://api.stackexchange.com/2.2/tags?order=desc&sort=popular&inname=react&site=stackoverflow';
+
+
+// Creating API Calls
+const instance = async (link) => {
+  let res = await axios.get(link);
+  let data = res.data.items
+  let count = objLoop(data)
+  console.log(count)
+};
+
+instance(url)
+
 
