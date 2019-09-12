@@ -5,52 +5,65 @@ let title = document.createElement('h2');
 
 // Helper functions
 
-const getData = async () => {
-  let key = 'KPD2QzLF1l6fPqcIyDQrTA(('
-  let url = `https://api.stackexchange.com/2.2/tags?order=desc&sort=popular&site=stackoverflow&key=${key}`;
+const getData = async language => {
+  let key = 'KPD2QzLF1l6fPqcIyDQrTA((';
+  let url = '';
+  if (!language) {
+    url = `https://api.stackexchange.com/2.2/tags?order=desc&sort=popular&site=stackoverflow&key=${key}`;
+  } else if (language) {
+    url = `https://api.stackexchange.com/2.2/tags?order=desc&sort=popular&inname=${language}&site=stackoverflow&key=${key}`;
+  }
   let res = await axios.get(url);
   let data = res.data.items;
 
-  let parsedData = data.map((arr) =>{
-    return [arr.name, arr.count]
-  }).slice(0,5)
-
+  let parsedData = data
+    .map(arr => {
+      return [arr.name, arr.count];
+    })
+    .slice(0, 5);
+  console.log(parsedData)
   let chart = c3.generate({
     data: {
-      columns: parsedData,
+      columns: [parsedData[0]],
       type: 'pie',
-      onclick: function (d, i) {
-        console.log('onclick', d, i);
+      onclick: function(d, i) {
+      
       },
-      onmouseover: function (d, i) {
-        console.log('onmouseover', d, i);
-      },
-      onmouseout: function (d, i) {
-        console.log('onmouseout', d, i);
-      }
-    }
-  });
-  return chart
+    },
+    transition: {
+      duration: 500
+    }  
+  }
+  );
+  setTimeout(() => {
+    chart.load({
+      columns: [parsedData[1]]
+    })
+  }, 500);
+   setTimeout(() => {
+    chart.load({
+      columns:[parsedData[2],parsedData[3]]
+    })
+   },1000)
+   setTimeout(() =>{
+     chart.load({
+       columns:[parsedData[4]]
+     })
+   },2000)
+
+  return chart;
 };
 
-getData()
+getData();
 
 // Creating API Calls
-button.addEventListener('click', () =>{
+button.addEventListener('click', () => {
   let form = document.querySelector('#form-graph1');
-  let searchQ = form.value
-  getData(searchQ)
+  let searchQ = form.value;
+  getData(searchQ);
 });
 
-
-
-
-
-
-
-
 // Chart generating
-
 
 // let chart2 = c3.generate({
 //   bindto: '#chart2',
