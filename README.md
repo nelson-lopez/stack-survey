@@ -65,7 +65,7 @@ Here's an example of the data I'll be using:
 | Wireframing                    |    H     |      4hrs      |     4hrs      |     4hrs    |
 | Scaffolding for HTML/CSS/C3.JS |    H     |      3hrs      |     3hrs      |     3hrs    |
 | Render Language queries to page|    H     |      2hrs      |     2.5hrs    |     2.5hrs  |
-| Apply search event listeners   |    H     |      4hrs      |     5Hrs      |     5hrs    |
+| Apply search event listeners   |    H     |      4hrs      |     4Hrs      |     4hrs    |
 | C3.JS interact with listeners  |    H     |      5hrs      |               |             |
 | Add responsiveness             |    H     |      8hrs      |               |             |
 | Add filtering with time  input |    M     |      2hrs      |               |             |
