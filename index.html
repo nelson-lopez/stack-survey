@@ -24,25 +24,33 @@
         <h4>Stack Survey</h4>
       </div>
     </nav>
-    <div class="article-container">
       <article>
+        <div class="article-container">
+          <div class="article-input--container">
         <input type="text" class = 'article--form' placeholder="Search..">
-        <button class="article--button">Submit</button>
-        <div id="chart"></div>
+        <div class="article-button--container">
+          <button class="article--button">Submit</button>
+        </div>
+        </div>
+        <div class="chart"></div>
+        <div class="article-paragraph--container">
         <p class="pageOne-p">
           This website is designed to interact with the official StackExchange API to give you an overview of programming queries.<br>
-          We expose the top 5 most queried sets of topics according to your search. Feel free to click on any Language or Library and to receive relevant information pertaining to your topic.
+          We expose the top 5 most queried sets of topics according to your search. Feel free to click on any Language or Library to receive relevant information pertaining to your topic.
         </p>
+        </div>
+        </div>
       </article>
-    </div>
+                <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+                <script src="./src/js/src.js"></script>
   </header>
-  <footer>
-      <div class="footer-menu--container">
-        <div class="footer-menu--div"><a href="">Github</a></div>
-        <div class="footer-menu--div"><a href="">LinkedIn</a></div>
-        <div class="footer-menu--div"><a href="">Facebook</a></div>
-      </div>
-          <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-          <script src="./src/js/src.js"></script>
-  </footer>
 </html>
+<!-- 
+  <footer>
+    <div class="footer-menu--container">
+      <div class="footer-menu--div"><a href="" class="footer-link">Github</a></div>
+      <div class="footer-menu--div"><a href="" class="footer-link">LinkedIn</a></div>
+      <div class="footer-menu--div"><a href="" class="footer-link">Facebook</a></div>
+    </div>
+  
+  </footer> -->

@@ -59,6 +59,7 @@ body {
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222;
+  margin: 0 auto;
 }
 
 a {
@@ -121,7 +122,12 @@ form {
 header {
   height: 100vh;
   text-align: center;
-  width: 100 vw;
+  width: 100vw;
+}
+
+body {
+  height: 100vh;
+  background-color: white;
 }
 
 nav {
@@ -129,7 +135,7 @@ nav {
 }
 
 .container {
-  background-color: rgba(71, 121, 152, 0.8);
+  background-color: rgba(189, 189, 189, 0.4);
   height: 40px;
   display: flex;
   flex-direction: row;
@@ -140,34 +146,30 @@ nav {
   flex-direction: column;
 }
 .container .nav-menu--div {
-  width: 2.5em;
-  height: 0.3em;
-  background-color: rgba(255, 109, 5, 0.9);
+  width: 2.2em;
+  height: 0.2em;
+  background-color: #455a64;
   margin: 5px 0;
   list-style-type: none;
 }
 .container h4 {
   flex: 1;
-  color: white;
+  color: #212121;
+  font-weight: 600;
 }
 
-.article-container {
+article .article-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
-body {
-  height: 100vh;
+article .article-input--container {
+  padding: 2em;
 }
-
-footer {
-  background-color: #f2b100;
-  height: 40px;
+article .article-button--container {
+  display: inline-block;
 }
-
 article .article--form {
-  background: transparent;
   border: 1em;
   background-color: rgba(224, 224, 224, 0.4);
 }
@@ -175,15 +177,62 @@ article .article--button {
   border: 1em;
   border-radius: 20%;
 }
+article .pageOne-p {
+  padding: 2em 2em;
+  font-size: 18px;
+}
 
 footer {
-  background-color: rgba(224, 224, 224, 0.4);
+  height: 40px;
+  background-color: transparent;
 }
 footer .footer-menu--container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 0.3em;
+}
+footer .footer-link {
+  color: transparent;
+}
+
+@media (min-width: 1024px) {
+  header {
+    height: 85vh;
+  }
+
+  article {
+    height: 75vh;
+    margin: 0 auto;
+    min-height: 50em;
+  }
+  article .article-container {
+    padding-top: 9em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 40em;
+  }
+  article .article-input--container {
+    order: 1;
+  }
+  article .article-button--container {
+    order: 2;
+  }
+  article .article-paragraph--container {
+    order: 3;
+    padding-top: 2em;
+    max-width: 20em;
+  }
+  article .pageOne-p {
+    width: 24em;
+    line-height: 1.8;
+    font-size: 22px;
+  }
+  article .chart {
+    order: 2;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

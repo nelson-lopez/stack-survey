@@ -36,6 +36,7 @@ const getPie = async language => {
   console.log(parsedDataName);
 
   let chart = c3.generate({
+    bindto:'.chart',
     data: {
       columns: [parsedData[0]],
       type: 'pie',
@@ -126,7 +127,7 @@ getPie();
 getTimeseries();
 
 // Creating API Calls
-button.addEventListener('input', () => {
+button.addEventListener('click', () => {
   let form = document.querySelector('.article--form');
   let searchQ = form.value;
   getPie(searchQ);
