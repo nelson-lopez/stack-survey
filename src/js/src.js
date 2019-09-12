@@ -2,11 +2,22 @@
 let button = document.querySelector('button');
 let test = '';
 let title = document.createElement('h2');
+let key = 'KPD2QzLF1l6fPqcIyDQrTA((';
+let firstP = document.querySelector('.pageOne-p');
 
 // Helper functions
-
+const getWiki = async (lang, key) => {
+  if(lang === 'c#'){
+    lang = 'c%23'
+  }
+  let res = await axios.get(
+    `https://api.stackexchange.com/2.2/tags/${lang}/wikis?site=stackoverflow&key=${key}`
+  );
+  let excerpt = res.data.items[0].excerpt;
+  firstP.innerHTML = excerpt;
+};
+// GraphFunctions
 const getData = async language => {
-  let key = 'KPD2QzLF1l6fPqcIyDQrTA((';
   let url = '';
   if (!language) {
     url = `https://api.stackexchange.com/2.2/tags?order=desc&sort=popular&site=stackoverflow&key=${key}`;
@@ -21,35 +32,39 @@ const getData = async language => {
       return [arr.name, arr.count];
     })
     .slice(0, 5);
-  console.log(parsedData)
+  console.log(parsedData);
+
   let chart = c3.generate({
     data: {
       columns: [parsedData[0]],
       type: 'pie',
       onclick: function(d, i) {
-      
-      },
+        let name = d.name;
+        getWiki(name, key);
+      }
     },
     transition: {
       duration: 500
-    }  
-  }
-  );
+    }
+  });
+
   setTimeout(() => {
     chart.load({
       columns: [parsedData[1]]
-    })
+    });
   }, 500);
-   setTimeout(() => {
+
+  setTimeout(() => {
     chart.load({
-      columns:[parsedData[2],parsedData[3]]
-    })
-   },1000)
-   setTimeout(() =>{
-     chart.load({
-       columns:[parsedData[4]]
-     })
-   },2000)
+      columns: [parsedData[2], parsedData[3]]
+    });
+  }, 1000);
+
+  setTimeout(() => {
+    chart.load({
+      columns: [parsedData[4]]
+    });
+  }, 2000);
 
   return chart;
 };
