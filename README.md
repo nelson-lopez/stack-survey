@@ -8,7 +8,7 @@
 | -------- | ------------------------------------------------ | ---------- |
 | Sep 10th | Project Description/ Priority Matrix/ Wireframes | Complete   |
 | Sep 11th | Functional Components/ Base CSS/HTML             | Complete   |
-| Sep 12th | Core JavaScript functionality                    | Incomplete |
+| Sep 12th | Core JavaScript functionality                    | Complete   |
 | Sep 13th | C3.js Graphing implementation                    | Incomplete |
 | Sep 14th | Responsiveness via CSS                           | Incomplete |
 | Sep 15th | MVP                                              | Incomplete |
