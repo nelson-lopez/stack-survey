@@ -69,6 +69,9 @@ const getData = async language => {
   return chart;
 };
 
+// Timeseries chart
+
+
 getData();
 
 // Creating API Calls
