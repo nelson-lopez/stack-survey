@@ -5,9 +5,9 @@ let title = document.createElement('h2');
 
 // Helper functions
 
-const getData = async language => {
+const getData = async () => {
   let key = 'KPD2QzLF1l6fPqcIyDQrTA(('
-  let url = `https://api.stackexchange.com/2.2/tags?order=desc&sort=popular&inname=${language}&site=stackoverflow&key=${key}`;
+  let url = `https://api.stackexchange.com/2.2/tags?order=desc&sort=popular&site=stackoverflow&key=${key}`;
   let res = await axios.get(url);
   let data = res.data.items;
 
@@ -33,7 +33,7 @@ const getData = async language => {
   return chart
 };
 
-getData('java')
+getData()
 
 // Creating API Calls
 button.addEventListener('click', () =>{
