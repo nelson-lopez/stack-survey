@@ -32,7 +32,8 @@ const getPie = async language => {
       return [arr.name, arr.count];
     })
     .slice(0, 5);
-  console.log(parsedData);
+  let parsedDataName = parsedData[0][0];
+  console.log(parsedDataName);
 
   let chart = c3.generate({
     data: {
@@ -47,7 +48,9 @@ const getPie = async language => {
       duration: 500
     }
   });
-
+  let color = chart.color;
+  color[parsedData[0][0]] = '#ff0000';
+  console.log(color);
   setTimeout(() => {
     chart.load({
       columns: [parsedData[1]]
@@ -85,7 +88,6 @@ const getTimeseries = async language => {
       return [arr.name, arr.count];
     })
     .slice(0, 5);
-  console.log(parsedData);
 
   let chart2 = c3.generate({
     bindto: '#chart2',
@@ -124,48 +126,8 @@ getPie();
 getTimeseries();
 
 // Creating API Calls
-button.addEventListener('click', () => {
-  let form = document.querySelector('#form-graph1');
+button.addEventListener('input', () => {
+  let form = document.querySelector('.article--form');
   let searchQ = form.value;
   getPie(searchQ);
 });
-
-// Chart generating
-
-// let chart2 = c3.generate({
-//   bindto: '#chart2',
-//   data: {
-//     columns: [
-//       ['data1', 100, 200, 100, 400, 150, 250],
-//       ['data2', 50, 20, 10, 40, 15, 25]
-//     ]
-//   }
-// });
-
-// chart.load({
-//   columns: [
-//     ['data1', 300, 100, 250, 150, 300, 150, 500],
-//     ['data2', 100, 200, 150, 50, 100, 250]
-//   ]
-// });
-
-// let chart3 = c3.generate({
-//   bindto: '#chart3',
-//   data: {
-//     columns: [
-//       ['data1', 300, 350, 300, 0, 0, 120],
-//       ['data2', 130, 100, 140, 200, 150, 50]
-//     ],
-//     types: {
-//       data1: 'area-spline',
-//       data2: 'area-spline'
-//     },
-//     groups: [['data1', 'data2']]
-//   }
-// });
-
-// setTimeout(function() {
-//   chart.load({
-//     columns: [[title, 400, 500, 450, 700, 600, 500]]
-//   });
-// }, 1000);

@@ -120,13 +120,12 @@ form {
 
 header {
   height: 100vh;
-  background-color: white;
   text-align: center;
   width: 100 vw;
 }
 
 nav {
-  padding-bottom: 2em;
+  padding-bottom: 1.2em;
 }
 
 .container {
@@ -141,7 +140,7 @@ nav {
   flex-direction: column;
 }
 .container .nav-menu--div {
-  width: 3.5em;
+  width: 2.5em;
   height: 0.3em;
   background-color: rgba(255, 109, 5, 0.9);
   margin: 5px 0;
@@ -164,6 +163,27 @@ body {
 
 footer {
   background-color: #f2b100;
+  height: 40px;
+}
+
+article .article--form {
+  background: transparent;
+  border: 1em;
+  background-color: rgba(224, 224, 224, 0.4);
+}
+article .article--button {
+  border: 1em;
+  border-radius: 20%;
+}
+
+footer {
+  background-color: rgba(224, 224, 224, 0.4);
+}
+footer .footer-menu--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 0.3em;
 }
 
 /*# sourceMappingURL=main.css.map */
