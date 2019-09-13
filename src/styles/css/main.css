@@ -125,11 +125,6 @@ header {
   width: 100vw;
 }
 
-body {
-  height: 100vh;
-  background-color: white;
-}
-
 nav {
   padding-bottom: 1.2em;
 }
@@ -158,6 +153,9 @@ nav {
   font-weight: 600;
 }
 
+article form {
+  padding-bottom: 1em;
+}
 article .article-container {
   display: flex;
   flex-direction: column;
@@ -194,6 +192,26 @@ footer .footer-menu--container {
 }
 footer .footer-link {
   color: transparent;
+}
+
+.questions-container {
+  padding: 1em 2em;
+  padding-top: 10em;
+}
+.questions-container h4 {
+  font-weight: 600;
+}
+.questions-container .questions-list li {
+  font-size: 22px;
+  list-style: none;
+}
+.questions-container .questions-form {
+  border: 1em;
+  background-color: rgba(224, 224, 224, 0.4);
+}
+.questions-container .questions-button {
+  border: 1em;
+  border-radius: 20%;
 }
 
 @media (min-width: 1024px) {

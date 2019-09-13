@@ -24,26 +24,39 @@
         <h4>Stack Survey</h4>
       </div>
     </nav>
-      <article>
-        <div class="article-container">
-          <div class="article-input--container">
-        <input type="text" class = 'article--form' placeholder="Search..">
-        <div class="article-button--container">
-          <button class="article--button">Submit</button>
-        </div>
+    <article>
+      <div class="article-container">
+        <div class="article-input--container">
+          <input type="text" class="article--form" placeholder="Search.." />
+          <div class="article-button--container">
+            <button class="article--button">Submit</button>
+          </div>
         </div>
         <div class="chart"></div>
         <div class="article-paragraph--container">
-        <p class="pageOne-p">
-          This website is designed to interact with the official StackExchange API to give you an overview of programming queries.<br>
-          We expose the top 5 most queried sets of topics according to your search. Feel free to click on any Language or Library to receive relevant information pertaining to your topic.
-        </p>
+          <p class="pageOne-p">
+            This website is designed to interact with the official StackExchange
+            API to give you an overview of programming queries. We expose the
+            top 5 most queried sets of topics according to your search. Feel
+            free to click on any Language or Library to receive relevant
+            information pertaining to your topic.
+          </p>
         </div>
-        </div>
-      </article>
-                <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-                <script src="./src/js/src.js"></script>
+      </div>
+    </article>
   </header>
+  <body>
+    <div class="questions-container">
+      <form action="">
+        <input type="text" class="questions-form" placeholder="Search.."> 
+        <button class="questions-button">Submit</button>
+      </form>
+      <h4>Recently questions:</h4>
+      <ul class="questions-list"></ul>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./src/js/src.js"></script>
+  </body>
 </html>
 <!-- 
   <footer>
