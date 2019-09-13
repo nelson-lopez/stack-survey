@@ -9,8 +9,8 @@
 | Sep 10th | Project Description/ Priority Matrix/ Wireframes | Complete   |
 | Sep 11th | Functional Components/ Base CSS/HTML             | Complete   |
 | Sep 12th | Core JavaScript functionality                    | Complete   |
-| Sep 13th | C3.js Graphing implementation                    | Comeplete  |
-| Sep 14th | Responsiveness via CSS                           | Incomplete |
+| Sep 13th | C3.js Graphing implementation                    | Complete   |
+| Sep 14th | Responsiveness via CSS                           | Complete   |
 | Sep 15th | MVP                                              | Incomplete |
 | Sep 16th | Present                                          | Incomplete |
 
@@ -67,7 +67,7 @@ Here's an example of the data I'll be using:
 | Render Language queries to page|    H     |      2hrs      |     2.5hrs    |     2.5hrs  |
 | Apply search event listeners   |    H     |      4hrs      |     4Hrs      |     4hrs    |
 | C3.JS interact with listeners  |    H     |      5hrs      |     3hrs      |      3hrs   |
-| Add responsiveness             |    H     |      8hrs      |               |             |
+| Add responsiveness             |    H     |      8hrs      |     7hrs      |      7hrs   |
 | Add filtering with time  input |    M     |      2hrs      |               |             |
 | Add  lang vs lang section      |    M     |      2hrs      |               |             |
 
