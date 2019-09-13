@@ -96,6 +96,7 @@ footer {
 
 // Media Queries
 @media (min-width: 1024px) {
+  
   header{
     height:85vh;
   }
@@ -104,15 +105,22 @@ footer {
     margin:0 auto;
     min-height: 50em;
   .article-container{
-    padding-top:9em;
+    padding-top:5em;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 40em;
   }
+
   .article-input--container{
     order:1;
+  }
+  .article--form{
+    height: 2em;
+  }
+  .article--button{
+    height: 2em;
   }
   .article-button--container{
     order:2;

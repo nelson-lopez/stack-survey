@@ -207,7 +207,7 @@ footer .footer-link {
     min-height: 50em;
   }
   article .article-container {
-    padding-top: 9em;
+    padding-top: 5em;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -216,6 +216,12 @@ footer .footer-link {
   }
   article .article-input--container {
     order: 1;
+  }
+  article .article--form {
+    height: 2em;
+  }
+  article .article--button {
+    height: 2em;
   }
   article .article-button--container {
     order: 2;
