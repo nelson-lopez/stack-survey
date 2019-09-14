@@ -1,10 +1,12 @@
 // Global definitions
 let button = document.querySelector('button');
-let test = '';
 let title = document.createElement('h2');
 let key = 'KPD2QzLF1l6fPqcIyDQrTA((';
 let firstP = document.querySelector('.pageOne-p');
-
+let qButton = document.querySelector('.questions-button')
+let qForm = document.querySelector('.questions-form')
+let list = document.querySelectorAll('li')
+console.log(list)
 
 // Helper functions
 const getWiki = async (lang, key) => {
@@ -17,6 +19,25 @@ const getWiki = async (lang, key) => {
   let excerpt = res.data.items[0].excerpt;
   firstP.innerHTML = excerpt;
 };
+
+const getQuestions = async (key,language) => {
+
+  let res = await axios.get(
+    `https://api.stackexchange.com/2.2/questions?fromdate=1568246400&todate=1568332800&order=desc&sort=votes&tagged=${language}&site=stackoverflow&key=${key}`
+  );
+  let data = res.data.items
+  let mappedData = data.map((arr) => {
+    return arr.title
+  })
+  let slicedMap = mappedData.slice(0, 5)
+  for (let i = 0; i < slicedMap.length; i++) {
+    const currentQ = slicedMap[i];
+    list[i].innerHTML = currentQ
+  }
+
+};
+
+
 // GraphFunctions
 const getPie = async language => {
   let url = '';
@@ -83,26 +104,17 @@ button.addEventListener('click', () => {
   getPie(searchQ);
 });
 
-const getQuestions = async (key,list) => {
+qButton.addEventListener('click' ,(e)=>{
+  e.preventDefault()
+  let langName = qForm.value
+  getQuestions(key,langName)
+})
 
-  let res = await axios.get(
-    `https://api.stackexchange.com/2.2/questions?fromdate=1568246400&todate=1568332800&order=desc&sort=votes&tagged=javascript&site=stackoverflow&key=${key}`
-  );
-  let data = res.data.items
-  let mappedData = data.map((arr)=>{
-    return arr.title
-  })
-  let slicedMap = mappedData.slice(0,5)
-  for(let question of slicedMap){
-    let list = document.querySelector('.questions-list')
-    let listItem = document.createElement('li')
-    listItem.innerHTML = question
-    list.appendChild(listItem)
-  }
-  
-};
 
-getQuestions(key);
+
+// getQuestions(key);
+
+
 
 // const getTimeseries = async language => {
 //   let url = '';
