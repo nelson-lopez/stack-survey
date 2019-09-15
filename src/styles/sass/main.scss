@@ -15,6 +15,7 @@ header {
   height: 100vh;
   text-align: center;
   width: 100vw;
+  padding-bottom: 2em;
 }
 
 nav {
@@ -75,25 +76,12 @@ article {
   }
 }
 
-footer {
-  height: 40px;
-  background-color: transparent;
-  .footer-menu--container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 0.3em;
-  }
-  .footer-link {
-    color: transparent;
-  }
-}
 .questions-container {
   padding: 1em 2em;
   h4 {
     font-weight: 600;
   }
-  padding-top: 10em;
+  padding-top: 15em;
   .questions-list {
     li {
       font-size: 22px;

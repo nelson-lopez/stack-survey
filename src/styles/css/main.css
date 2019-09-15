@@ -123,6 +123,7 @@ header {
   height: 100vh;
   text-align: center;
   width: 100vw;
+  padding-bottom: 2em;
 }
 
 nav {
@@ -180,23 +181,9 @@ article .pageOne-p {
   font-size: 18px;
 }
 
-footer {
-  height: 40px;
-  background-color: transparent;
-}
-footer .footer-menu--container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 0.3em;
-}
-footer .footer-link {
-  color: transparent;
-}
-
 .questions-container {
   padding: 1em 2em;
-  padding-top: 10em;
+  padding-top: 15em;
 }
 .questions-container h4 {
   font-weight: 600;
