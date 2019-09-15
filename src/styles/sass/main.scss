@@ -104,7 +104,7 @@ article {
 
 @media (min-width: 1024px) {
   header {
-    height: 85vh;
+    height: 100vh;
   }
   article {
     height: 75vh;
@@ -117,6 +117,7 @@ article {
       flex-direction: column;
       justify-content: center;
       max-width: 40em;
+  
     }
 
     .article-input--container {
@@ -144,5 +145,11 @@ article {
     .chart {
       order: 2;
     }
+  }
+  .questions-container{
+    height: 100vh;
+    text-align: center;
+    transition: background-color 4s ease;
+    background-color: invert(white);
   }
 }

@@ -203,7 +203,7 @@ article .pageOne-p {
 
 @media (min-width: 1024px) {
   header {
-    height: 85vh;
+    height: 100vh;
   }
 
   article {
@@ -243,6 +243,13 @@ article .pageOne-p {
   }
   article .chart {
     order: 2;
+  }
+
+  .questions-container {
+    height: 100vh;
+    text-align: center;
+    transition: background-color 4s ease;
+    background-color: black;
   }
 }
 
