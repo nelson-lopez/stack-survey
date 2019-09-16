@@ -11,7 +11,7 @@
 | Sep 12th | Core JavaScript functionality                    | Complete   |
 | Sep 13th | C3.js Graphing implementation                    | Complete   |
 | Sep 14th | Responsiveness via CSS                           | Complete   |
-| Sep 15th | MVP                                              | Incomplete |
+| Sep 15th | MVP                                              | Complete   |
 | Sep 16th | Present                                          | Incomplete |
 
 ## Wireframes
@@ -68,10 +68,8 @@ Here's an example of the data I'll be using:
 | Apply search event listeners   |    H     |      4hrs      |     4Hrs      |     4hrs    |
 | C3.JS interact with listeners  |    H     |      5hrs      |     3hrs      |      3hrs   |
 | Add responsiveness             |    H     |      8hrs      |     7hrs      |      7hrs   |
-| Add filtering with time  input |    M     |      2hrs      |               |             |
-| Add  lang vs lang section      |    M     |      2hrs      |               |             |
-
-| Total                          |    H     |     30hrs     |               |             |
+| Add filtering with time  input |    M     |      2hrs      |     1hrs      |     1hrs    |
+| Total                          |    H     |     30hrs     |      24.5hrs  |       24.5hrs |
 
 ## Code Snippet
 
