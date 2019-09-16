@@ -14,7 +14,7 @@
 | Sep 13th | C3.js Graphing implementation                    | Complete   |
 | Sep 14th | Responsiveness via CSS                           | Complete   |
 | Sep 15th | MVP                                              | Complete   |
-| Sep 16th | Present                                          | Incomplete |
+| Sep 16th | Present                                          | Complete   |
 
 ## Wireframes
 
