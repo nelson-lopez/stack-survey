@@ -147,9 +147,8 @@ article {
     }
   }
   .questions-container{
+    padding-top: 10em;
     height: 100vh;
     text-align: center;
-    transition: background-color 4s ease;
-    background-color: invert(white);
   }
 }
